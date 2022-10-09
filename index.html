@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <META http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, intial-scale=1.0">
+         <title>Personal Portfolio Website </title>   
+         <link rel="stylesheet" href="style.css">
+         <script src="https://kit.fontawesome.com/bb654ee491.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.PNG"class="logo">
+                    <ul>
+                        <li><a href  ="#header">Home</a></li>
+                        <li><a href  ="#about">About</a></li>
+                        <li><a href  ="#services">services</a></li>
+                        
+                        <li><a href  ="#contact">Contact</a></li>
+                        
+                        
+                    </ul>
+                    
+                </nav>
+                <div class="header-text">
+                    <p>App Developer | Web Designer</p>
+
+                    <h2>Hi,I'm <span>GANESH S A</span><br> App Developer & Digital Marketer<BR>from Chennai</h2>
+                    
+                </div>
+            </div>
+            
+         
+        </div>
+        <!-- ---------------about--------- -->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me :</h1>
+                    <div></div>
+                        <p>I'm a UG student in Sri sai Ram institute of technology in the department of CSE,<br>I'm ambitious and driven. I thrive on challenge and constantly set goals for myself, so I have something to strive towards. I am not comfortable with settling, and I am always looking for an opportunity to do better and achieve greatness."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI</span><br>Designing web/app</li>
+                            <li><span>Marketing</span><br>Digital Marketing</li>
+                            <li><span>App development</span><br>Building Android apps</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="education" >
+                        <ul>
+                            <li><span>2018</span><br>10th Grade at AGM school.</li>
+                            <li><span>2021</span><br>Diploma in CSE at Apollo group of college.</li>
+                            <li><span>2024</span><br>BE from Sri sai ram institute of technology.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+<!-- ---------------------------services-------------------- -->  
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Design</h2>
+                <p>Creation of websites and pages to reflect a company's brand and information and ensure a user-friendly experience. Appearance and design are incorporated as vital elements whether you're designing a website, mobile app or maintaining content on a web page.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shop"></i>
+                <h2>Digital Marketing</h2>
+                <p>Responsible for getting the word out in the market about a brand. They use a wide variety of digital channels to build brand awareness and generate leads. The digital channels include the company's website, and social media platforms such as YouTube, Facebook, Instagram and Twitter, and others.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>App Design</h2>
+                <p>An application developer is a software engineer who designs, creates, tests, programs and updates applications for a particular device like mobile or web or a specific operating system. Application developers typically specialise in one area of development, like a mobile phone application</p>
+                <a href="#">learn more</a>
+            </div>
+             
+        </div>
+
+    </div>
+</div> 
+<!-- -------------contact-------------------- -->
+<div id ="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me :</h1>
+                <p>Gmail : ganeshsharvan2003@gmail.com</p>
+                <p>               </p>
+                <p>Phone : +91-91761 47007</p>
+                <div class="social-icons">
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+</div>
+   
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+            }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    </body>
+</html>
